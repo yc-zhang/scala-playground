@@ -31,7 +31,7 @@ val amount = 100F
 println(s"Tax on $amount = ${calcTax(amount)}")
 
 {
-  import ComplicatedSalesTax.rate
+//  import ComplicatedSalesTax.rate
   implicit val myStore = ComplicatedSalesTaxData(0.6F, false, 1010)
 
   val anotherAmount = 100F
