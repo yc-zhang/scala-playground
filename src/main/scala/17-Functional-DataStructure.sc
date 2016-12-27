@@ -26,6 +26,3 @@ map2.flatMap(f => f._2.toList)
 map2.filter(f => f._1 == "Yuchen")
 
 map2.flatMap(f => f._2.toList).toSet.reduce(_ + _)
-
-
-
