@@ -27,3 +27,10 @@ for {
   if c.isLower
   c2 = s"$c-${c.toUpper}"
 } yield c2
+
+val map = Map("one" -> 1, "two" -> 2)
+
+val list = for {
+  (k, v) <- map
+  i = v + 10
+} yield (k, i)
